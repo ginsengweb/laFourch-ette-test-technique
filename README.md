@@ -84,7 +84,7 @@ Le panier doit être synchronisé dans le backend grâce à l'API mise à dispos
 
 Dans tous les cas, utilise le tableau déjà disponible dans le `CartService` en tant que base de donnée, ne cherche pas a mettre en place une autre base, ça te prendrait trop de temps. Cela a pour impact que les paniers sont tous supprimés à chaque redémarrage du serveur. ✅
 
-Le panier sauvegardé dans le back permettra de conserver le panier au rechargement de la page dans le front. ❌
+Le panier sauvegardé dans le back permettra de conserver le panier au rechargement de la page dans le front.
 
 Le panier doit être affiché dans une page à part : "/cart". Le panier doit être composé des éléments suivants : ✅
 
@@ -94,6 +94,18 @@ Le panier doit être affiché dans une page à part : "/cart". Le panier doit ê
   - Le prix ✅
 
 Le style du panier est libre, une fois de plus, ce n'est pas un critère d'évaluation, à condition qu'il soit lisible.
+
+### Retour sur le timing de développement de l'application
+1. Doc, installation, lancement et découverte de docker +30' 
+2. Lecture du cahier des charges et découverte du projet dans sa globalité. Découverte de Next.js et mise en place de l'architecture front et de la base React +50'
+3. Recherche du concept et de l'identité globale et mise en place du style et du wording avec Tailwind et chatGpt +1h' 
+4. Doc, installation, lancement et découverte d'Algolia' +1h30' 
+5. Découverte de Nest.js et du back, fonctions API complétée avec l'aide de chatGPT +2h'
+6. Panier fonctionnel pour récupérer et afficher les produits +2h25
+7. Enchaînement de multiples bugs de gestion de versions des packages, des config de docker etc. 🥲+3h
+8. Relecture du cahier des charges, implémentation des choses qui ont été oubliées dans le lot +3h30
+9. Amélioration de certaines parties du code (gestion des erreurs, des appels API, typing, etc.) et début de la documentation +4h
+10. Réaliser à +4 l'oubli de l'intégration de l'image et de la demande responsive pour les cartes 😳
 
 ## Documentation
 
