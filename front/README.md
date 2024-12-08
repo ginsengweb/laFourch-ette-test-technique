@@ -1,3 +1,8 @@
+En définitive il y aavait 3 façon de gérer l'idCart et sa transmission. Dans l'url récupéré en window.location etc, soit en state local et avec une façon d elpasser en props à link (vérifier si c'est faisable) ou en le mettant dans le localstorgae. 
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

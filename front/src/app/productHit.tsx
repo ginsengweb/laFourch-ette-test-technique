@@ -38,6 +38,9 @@ export const ProductHit = ({
     };
 
     return (
+        // @todo : Je réalise en documentant le code que j'ai omis la partie design 4 cartes par ligne en desktop et 2 en mobile
+        // @todo : D'avoir fait faire un design basique par chatGPT m'a donné la sensation que c'était fait et je n'ai donc pas
+        // @todo: vérifié la concordance avec le cahier des charges. Moralité : ne pas perdre le nord parce que ça paraît plus simple ;)
         <div className="bg-amber-50 border-l-4 border-green-600 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 mb-6">
             {/* Nom du produit */}
             <h3 className="text-2xl font-bold text-green-900 mb-2">{hit.name}</h3>
