@@ -4,7 +4,7 @@
 
 Le but de ce test technique est de tester ta capacité à t'adapter rapidement lors de l'intégration d'un outil externe disposant d'une documentation exhaustive, ta capacité à construire un state dans une application React et a appliquer quelques modifications en back pour adapter une API.
 
-Tu vas donc devoir créer une page de recherche de produits en utilisant Algolia, ainsi qu'un panier ecommerce.
+Tu vas donc devoir créer une page de recherche de produits en utilisant Algolia ✅, ainsi qu'un panier ecommerce ✅.
 
 ### Contexte
 
@@ -20,7 +20,7 @@ Côté back, développer en Typescript est obligatoire (le framework utilisé es
 
 #### Option 1 : Docker
 
-Tu peux utiliser Docker et Docker Compose pour run ce projet.
+Tu peux utiliser Docker et Docker Compose pour run ce projet ✅.
 
 Dans ce cas, utilise le script `cli/npm` pour exécuter NPM dans les conteneurs comme tel :
 
@@ -52,46 +52,46 @@ Les ports sont également 3000 pour le front et 4000 pour le back.
 
 ### Page de recherche
 
-La page de recherche doit être construite avec Algolia InstantSearch, elle doit être la page principale du site (accessible sur /).
+La page de recherche doit être construite avec Algolia InstantSearch ✅, elle doit être la page principale du site (accessible sur /) ✅.
 
-La recherche est constituée d'un input de texte pour la recherche, ainsi que des résultats de la recherche. Les résultats de la recherche doivent se mettre à jour automatiquement au fur et à mesure que l'on tape dans l'input. **Pour ceux qui ne connaissent pas Algolia InstantSearch, pas de panique, tout ceci est natif dans l'outil.**
+La recherche est constituée d'un input de texte pour la recherche ✅, ainsi que des résultats de la recherche ✅. Les résultats de la recherche doivent se mettre à jour automatiquement au fur et à mesure que l'on tape dans l'input ✅. **Pour ceux qui ne connaissent pas Algolia InstantSearch, pas de panique, tout ceci est natif dans l'outil.**
 
-La recherche peut ne pas disposer de pagination, afficher les 20 résultats les plus pertinants sera considéré comme un exercice réussi.
+La recherche peut ne pas disposer de pagination, afficher les 20 résultats les plus pertinants sera considéré comme un exercice réussi ✅.
 S'il te reste du temps, ajouter une pagination constitue un plus.
 
 Les produits doivent être présentés sous forme de Cards disposant au minimum des éléments suivants :
 
-- une image
-- un nom
-- un prix
-- un bouton "Ajouter au panier" ou "Supprimer du panier"
+- une image ❌ (le champs existe dans la base de données Algolia, j'ai oublié de l'intégrer)
+- un nom ✅
+- un prix ✅
+- un bouton "Ajouter au panier" ou "Supprimer du panier" ✅
 
-Les Cards doivent être présentées dans une grille, avec 4 éléments par ligne en Desktop, et 2 éléments par ligne en mobile.
+Les Cards doivent être présentées dans une grille, avec 4 éléments par ligne en Desktop, et 2 éléments par ligne en mobile ❌.
 
-Le style de la Card est libre et ne représente pas un critère déterminant dans l'évaluation du test, veille juste a faire quelque chose de lisible.
+Le style de la Card est libre et ne représente pas un critère déterminant dans l'évaluation du test, veille juste à faire quelque chose de lisible.
 
 ### Panier
 
-L'application laisse la possibilité d'ajouter des produits à un panier ecommerce.
+L'application laisse la possibilité d'ajouter des produits à un panier ecommerce. ✅
 
-Le state du panier doit être accessible globalement dans l'application, l'utilisation de librairies de gestion du state est autorisée mais pas obligatoire : fait ce qu'il te plait.
+Le state du panier doit être accessible globalement dans l'application, l'utilisation de librairies de gestion du state est autorisée mais pas obligatoire : fait ce qu'il te plait. ✅
 
-Pour simplifier l'exercice, le panier ne dispose pas d'une gestion de quantités : un produit ne peut être qu'une seule fois dans le panier.
+Pour simplifier l'exercice, le panier ne dispose pas d'une gestion de quantités : un produit ne peut être qu'une seule fois dans le panier. ✅
 
-L'utilisateur peut ajouter un produit dans le panier grâce au bouton "Ajouter au panier" disponible sur les Cards produit. SI le produit est déjà dans le panier, le bouton "Ajouter au panier" est remplacé par un bouton "Supprimer du panier" qui a pour action de... supprimer le produit du panier !
+L'utilisateur peut ajouter un produit dans le panier grâce au bouton "Ajouter au panier" disponible sur les Cards produit. SI le produit est déjà dans le panier, le bouton "Ajouter au panier" est remplacé par un bouton "Supprimer du panier" qui a pour action de... supprimer le produit du panier ! ✅
 
-Le panier doit être synchronisé dans le backend grâce à l'API mise à disposition dans le dossier `back`. Ce backend n'est pas totalement implémenté, **il faut donc compléter cette implémentation.** Certains types et controlleurs sont déjà en place, tu peux t'en servir, les modifier, fait ce qu'il te plaît.
+Le panier doit être synchronisé dans le backend grâce à l'API mise à disposition dans le dossier `back`. Ce backend n'est pas totalement implémenté, **il faut donc compléter cette implémentation.** Certains types et controlleurs sont déjà en place, tu peux t'en servir, les modifier, fait ce qu'il te plaît. ✅
 
-Dans tous les cas, utilise le tableau déjà disponible dans le `CartService` en tant que base de donnée, ne cherche pas a mettre en place une autre base, ça te prendrait trop de temps. Cela a pour impact que les paniers sont tous supprimé à chaque redémarrage du serveur.
+Dans tous les cas, utilise le tableau déjà disponible dans le `CartService` en tant que base de donnée, ne cherche pas a mettre en place une autre base, ça te prendrait trop de temps. Cela a pour impact que les paniers sont tous supprimés à chaque redémarrage du serveur. ✅
 
-Le panier sauvegardé dans le back permettra de conserver le panier au rechargement de la page dans le front.
+Le panier sauvegardé dans le back permettra de conserver le panier au rechargement de la page dans le front. ❌
 
-Le panier doit être affiché dans une page à part : "/cart". Le panier doit être composé des éléments suivants :
+Le panier doit être affiché dans une page à part : "/cart". Le panier doit être composé des éléments suivants : ✅
 
-- Le prix total
+- Le prix total ✅
 - La liste des produits, sous forme de liste, avec les informations suivantes pour chaque produit :
-  - Le nom du produit
-  - Le prix
+  - Le nom du produit ✅
+  - Le prix ✅
 
 Le style du panier est libre, une fois de plus, ce n'est pas un critère d'évaluation, à condition qu'il soit lisible.
 

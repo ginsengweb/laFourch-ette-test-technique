@@ -1,6 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
 
+
+// Timing étant trop serré pour découvrir aussi Nest et comprenant les bases ici, j'ai fais compléter service par chatpGPT
+// @todo : améliorer le typing et mettre en place des tests. Lire la doc complète pour comprendre et mieux appréhender NestJS
+
 export type Cart = {
   id: string;
   items: Item[];

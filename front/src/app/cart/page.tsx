@@ -5,7 +5,7 @@ import Link from 'next/link';
 import axios from 'axios';
 
 const CartPage = () => {
-    console.log("stro", localStorage.getItem("cartId"))
+
     const cartId = localStorage.getItem("cartId"); // Ou autre méthode de stockage (localStorage, cookies, etc.)
     const [panier, setPanier] = useState(null)
     const [total, setTotal] = useState(0); // Ajout d'un état pour le total du panier

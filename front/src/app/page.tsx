@@ -8,7 +8,7 @@ import { algoliasearch } from "algoliasearch";
 import { ProductHit } from "@/app/productHit";
 import axios from "axios";
 
-// Les identifiants pour accéder au compte algoliaSearch. Pour la base de données j'ai utlisé chatGPT qui m'a édité un JSON que j'ai injecté dans Algolia
+// Les identifiants pour accéder au compte algoliaSearch. Pour la base de données, j'ai utilisé chatGPT qui m'a édité un JSON que j'ai injecté dans Algolia
 const searchClient = algoliasearch(
     "GBAEEY3Q9G", // Application ID
     "48b9628fcab899a57b449df296321bfa" // Clé de recherche publique
@@ -83,7 +83,7 @@ const SearchPage = () => {
                         </p>
                     </div>
                     <nav className="mt-8">
-                        {/* Ici ce lien va ouvrir la page /localhost:3000/cart. Link permet d'enregistrer la navigation et ainsi pouvoir retourner en arrière */}
+                        {/* Ici ce lien va ouvrir la page /localhost:3000/cart. Link permet de précharger les pages */}
                         {/* @ todo : amélioration possible en envoyant sur cart?id pour y récupérer ensuite l'idCart directement */}
                         <Link
                             href="/cart"

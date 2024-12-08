@@ -1,3 +1,6 @@
+// Fichier à supprimer à court terme, faire évoluer à long terme
+
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
